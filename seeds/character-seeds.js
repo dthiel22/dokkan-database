@@ -29,7 +29,6 @@ const characterData = [
       transform_type: null,
       transform_condition: null,
       transform_condition_eza: null,
-      category: "Majin Buu Saga",
       jp_date: "31 Dec 2015",
       glb_date: "5 May 2016",
       jp_date_eza: null,

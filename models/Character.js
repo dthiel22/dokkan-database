@@ -120,10 +120,6 @@ Character.init(
       type: DataTypes.TEXT,
       allowNull: true
     },
-    category: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
     jp_date: {
       type: DataTypes.TEXT,
       allowNull: true
