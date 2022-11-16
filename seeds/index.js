@@ -1,5 +1,7 @@
 const seedCharacters = require('./character-seeds');
+
 const seedLinkSkills = require('./linkskill-seeds');
+const seedCategories = require('./category-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -8,6 +10,11 @@ const seedAll = async () => {
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedCharacters();
   console.log('\n----- CHARACTERS SEEDED -----\n');
+  await seedCategories();
+  console.log('\n----- CHARACTERS SEEDED -----\n');
+
+
+
   await seedLinkSkills();
   console.log('\n----- LINKS SEEDED -----\n');  
 

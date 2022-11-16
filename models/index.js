@@ -1,8 +1,13 @@
 // import models
 const Character = require('./Character');
+const Category = require('./Category');
 const LinkSkill = require('./LinkSkill');
 
-Character.hasMany(LinkSkill)
+//TODO: great example from gloomhaven helper
+// AddedMonster.belongsToMany(Encounter,{through: `EncounterAddedMonster`})
+
+Character.belongsToMany(Category,{through: 'CharacterCategory'})
+Category.hasMany(Character,{through: 'CharacterCategory'})
 
 // // Products belongToMany Tags (through ProductTag)
 // Character.belongsToMany(LinkSkill, {
@@ -27,5 +32,6 @@ Character.hasMany(LinkSkill)
 
 module.exports = {
   Character,
+  Category,
   LinkSkill,
 };

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class LinkSkill extends Model {}
+class Category extends Model {}
 
-LinkSkill.init(
+Category.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -19,8 +19,8 @@ LinkSkill.init(
   },
   {
     sequelize,
-    modelName: 'link_skill',
+    modelName: 'category',
   }
 );
 
-module.exports = LinkSkill;
+module.exports = Category;
