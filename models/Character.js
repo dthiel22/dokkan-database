@@ -8,9 +8,8 @@ Character.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      // allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      allowNull: true
     },
     char_link: {
       type: DataTypes.TEXT,
@@ -33,10 +32,6 @@ Character.init(
       allowNull: true
     },
     cost: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
-    dokkan_id: {
       type: DataTypes.TEXT,
       allowNull: true
     },
@@ -139,7 +134,6 @@ Character.init(
   },
   {
     sequelize,
-    modelName: 'character',
   }
 );
 
